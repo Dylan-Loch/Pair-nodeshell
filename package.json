@@ -1,0 +1,22 @@
+{
+  "name": "pair-nodeshell",
+  "version": "1.0.0",
+  "description": "node pair exercise",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan-Loch/Pair-nodeshell.git"
+  },
+  "author": "Dylan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylan-Loch/Pair-nodeshell/issues"
+  },
+  "homepage": "https://github.com/Dylan-Loch/Pair-nodeshell#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

@@ -13,4 +13,7 @@ process.stdin.on("data", (data) => {
   if (cmd.slice(0, 3) === "cat") {
     require("./cat.js")(cmd.slice(4));
   }
+  if (cmd.slice(0, 4) === "curl") {
+    require("./curl.js")(cmd.slice(5));
+  }
 });
