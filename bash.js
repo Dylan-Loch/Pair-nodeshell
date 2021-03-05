@@ -2,11 +2,11 @@ process.stdout.write("prompt > ");
 
 process.stdin.on("data", (data) => {
   const cmd = data.toString().trim();
-
-  if (cmd === "pwd") {
-    process.stdout.write(process.cwd());
-    process.stdout.write("\npromt > ");
+  if (cmd === "pwd"){
+    const pwd = require('./pwd.js');
+    pwd();
   }
-  // process.stdout.write("You typed; " + cmd);
-  // process.stdout.write("\npromt > ");
+  if (cmd === "ls"){
+    require('./ls.js')();
+  }
 });
